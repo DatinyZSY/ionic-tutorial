@@ -21,7 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp,{},{
+    IonicModule.forRoot(MyApp,{backButtonText: "返回"},{
       links: [
         {component: HelloIonicPage, name: 'Home', segment: 'home'},
         {component: ListPage, name: 'ListPage', segment: 'ListPage'},

@@ -28,7 +28,7 @@ export class ListPage {
 
   itemTapped(event, item) {
     this.navCtrl.push(ItemDetailsPage, {
-      item: item
+      item: JSON.stringify(item)
     });
   }
 }

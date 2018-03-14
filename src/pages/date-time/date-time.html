@@ -17,13 +17,13 @@
   <ion-list>
     <ion-item>
       <ion-label>Start Date</ion-label>
-      <ion-datetime displayFormat="YYYY MMM DD" [(ngModel)]="event.month" cancelText="取消" doneText="确定"></ion-datetime>
+      <ion-datetime displayFormat="YYYY MM DD" [(ngModel)]="event.month" cancelText="取消" doneText="确定"></ion-datetime>
     </ion-item>
 
 
     <ion-item>
       <ion-label>Start Time</ion-label>
-      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+      <ion-datetime displayFormat="H:mm" pickerFormat="H mm" [(ngModel)]="event.timeStarts"></ion-datetime>
     </ion-item>
 
     <ion-item>

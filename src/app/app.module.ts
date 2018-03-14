@@ -8,6 +8,7 @@ import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { CardPage } from '../pages/card/card';
 import { ComponentsCard } from '../components/card/card';
+import { DateTimePage } from '../pages/date-time/date-time';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,11 +20,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ItemDetailsPage,
     ListPage,
     CardPage,
-    ComponentsCard
+    ComponentsCard,
+    DateTimePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp,{backButtonText: "返回"},{
+    IonicModule.forRoot(MyApp,
+    {
+      backButtonText: "返回",
+      monthShortNames: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月',],
+      dayShortNames: ['dom', 'seg', 'ter']
+    },
+    {
       links: [
         {component: HelloIonicPage, name: 'Home', segment: 'home'},
         {component: ListPage, name: 'ListPage', segment: 'ListPage'},
@@ -38,7 +46,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    CardPage
+    CardPage,
+    DateTimePage
   ],
   providers: [
     StatusBar,

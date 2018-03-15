@@ -17,19 +17,19 @@
 <ion-content class="outer-content">
   <ion-list>
     <ion-item>
-      <ion-label>Start Date</ion-label>
-      <ion-datetime displayFormat="YYYY MM DD" [(ngModel)]="event.month" cancelText="取消" doneText="确定"></ion-datetime>
+      <ion-label>开始日期</ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="event.month" cancelText="取消" doneText="确定" max="2100" min="1970"></ion-datetime>
     </ion-item>
 
 
     <ion-item>
-      <ion-label>Start Time</ion-label>
-      <ion-datetime displayFormat="H:mm" pickerFormat="H mm" [(ngModel)]="event.timeStarts"></ion-datetime>
+      <ion-label>开始时间</ion-label>
+      <ion-datetime displayFormat="H:mm" pickerFormat="H mm" [(ngModel)]="event.timeStarts" cancelText="取消" doneText="确定"></ion-datetime>
     </ion-item>
 
     <ion-item>
       <ion-label>Ends</ion-label>
-      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeEnds"></ion-datetime>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeEnds" cancelText="取消" doneText="确定"></ion-datetime>
     </ion-item>
 
     <button ion-item>

@@ -28,7 +28,7 @@
     <img [src]="item.imgUrl">
 
     <ion-card-content>
-      <p>{{item.content}}</p>
+      <p>{{item.detail}}</p>
     </ion-card-content>
 
     <ion-row>
@@ -44,7 +44,7 @@
           <div>{{item.comments}}</div>
         </button>
       </ion-col>
-      <ion-col center text-center (click)="vote()">
+      <ion-col center text-center>
         <ion-note>
           {{item.pastTime}}
         </ion-note>

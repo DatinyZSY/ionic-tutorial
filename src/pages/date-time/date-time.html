@@ -49,4 +49,22 @@
       <ion-note item-end>None</ion-note>
     </button>
   </ion-list>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>用户名</ion-label>
+      <ion-input type="text" [(ngModel)]="userName"></ion-input>
+    </ion-item>
+
+    <ion-item>{{userName}}</ion-item>
+
+    <ion-item>
+      <ion-label floating>密码</ion-label>
+      <ion-input type="password" [(ngModel)]="passWord"></ion-input>
+    </ion-item>
+
+    <ion-item>{{passWord}}</ion-item>
+
+  </ion-list>
 </ion-content>
